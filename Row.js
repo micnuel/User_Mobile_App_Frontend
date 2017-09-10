@@ -12,7 +12,7 @@ const screen =Dimensions.get('window');
 
 export default class Row extends Component{
     render ({user, onPress} =this.props){
-        const {surName, imageThumb} = user;
+        const {surName, imageLarge} = user;
         return(
             <TouchableOpacity
             //pass row style
@@ -20,10 +20,10 @@ export default class Row extends Component{
             onPress ={onPress}
             activeOpacity={0.7}
             >
-            <Image source={{ uri: imageThumb}} style={styles.imageBackground} />
-
-            <Text style={[styles.text, styles.title]}>{surName.toUpperCase()}</Text>
-
+            <View style ={styles.viewContainer}>
+              <Text style={[styles.text, styles.title]}>&raquo;&raquo; {surName.toUpperCase()}</Text>
+              <Image source={{ uri: imageLarge}} style={styles.imageBackground} />
+            </View>
             </TouchableOpacity>
         );
     }
@@ -31,16 +31,15 @@ export default class Row extends Component{
 
 const styles = StyleSheet.create({
     row: {
-      paddingBottom: 4,                   
+      paddingBottom: 4, 
     },
     imageBackground: {
-      height: screen.height /5,          
-      justifyContent: 'center',           
-      alignItems: 'center',               
+      height: screen.height /5,                      
       width:screen.width /3,
+      paddingRight:200
     },
     text: {
-      color: '#fff',                      
+      color: '#000',                      
       backgroundColor: 'transparent',    
       fontFamily: 'Avenir',               
       fontWeight: 'bold',                
@@ -49,10 +48,16 @@ const styles = StyleSheet.create({
       textShadowRadius: 4,
     },
     title: {
-      fontSize: 22,                      
+      fontSize: 22,
+      paddingRight:20
     },
-    rating: {
-      flexDirection: 'row',               
+    viewContainer: {
+      flexDirection: 'row',
+      flex:1,
+      backgroundColor:'#ccc',
+      justifyContent: 'flex-end',    
+      alignItems: 'center',               
+      
     },
     icon: {
       width: 22,                          

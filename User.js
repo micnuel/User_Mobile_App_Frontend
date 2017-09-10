@@ -53,7 +53,7 @@ export default class User extends Component{
                 activeOpacity={0.7}
                 style={styles.button}
                 >
-                <Text style={styles.buttonText}> Close</Text>
+                <Text style={styles.buttonText}> Close </Text>
                 </TouchableOpacity>
             </View>
     </View>
@@ -91,8 +91,8 @@ const styles = StyleSheet.create({
       justifyContent: 'center',           
     },
     icon: {
-      width: 22,                         
-      height: 22,                         
+      width: 200,                         
+      height: 200,                         
       marginRight: 5,                     
     },
     value: {
@@ -119,6 +119,7 @@ const styles = StyleSheet.create({
       color: '#fff',                      
       fontFamily: 'Avenir',               
       fontWeight: 'bold',                
-      textAlign: 'center',                
+      textAlign: 'center',  
+      fontSize: 24          
     }
   });
