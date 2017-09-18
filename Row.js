@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
       paddingRight:200
     },
     text: {
-      color: '#000',                      
+      color: '#C8E31D',                      
       backgroundColor: 'transparent',    
       fontFamily: 'Avenir',               
       fontWeight: 'bold',                
@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
     viewContainer: {
       flexDirection: 'row',
       flex:1,
-      backgroundColor:'#ccc',
-      justifyContent: 'flex-end',    
+      backgroundColor:'#520E49',
+      justifyContent: 'space-between',    
       alignItems: 'center',               
       
     },

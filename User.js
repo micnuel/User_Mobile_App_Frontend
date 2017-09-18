@@ -65,7 +65,7 @@ export default class User extends Component{
 const styles = StyleSheet.create({
     container: {
       flex: 1,                          
-      backgroundColor: '#333',         
+      backgroundColor: '#520E49',
     },
     imageBackground: {
       flex: 1,                            
@@ -99,14 +99,19 @@ const styles = StyleSheet.create({
       fontSize: 16,                       
     },
     view: {
-      backgroundColor: 'rgba(255,255,255,0.5)', 
+      backgroundColor: '#C8E31D', 
       marginTop: 10,                      
-      padding: 0,                        
+      padding: 0,  
+      marginRight:10,
+      marginLeft:10,
     },
     viewText: {
       color: '#333',                      
       fontFamily: 'Avenir',              
-      fontSize: 25,                       
+      fontSize: 25, 
+      textAlign:'center',
+      
+      
     },
     buttonContainer: {
       marginTop: 20,                     
